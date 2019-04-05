@@ -185,6 +185,7 @@
                   </li>
                   <li class="col-sm-12 no-margin">
                     <button type="button" value="submit" class="btn" id="btn_submit" onClick="enviarEmail3();">Enviar</button>
+                    <a href="pdf/Brochure_Culture_Code2.pdf" target="_blank" id="Brochure" class="btn btn-orange margin-left-30 margin-top-20" style="display: none"></a>
                   </li>
                 </ul>
               </form>
@@ -357,6 +358,7 @@
         $('#detalles').val("");
          $('#telefono').val("");
         $('#mensaje').val("");
+        document.getElementById("Brochure").click();
         //debugger;
 
       })
@@ -381,6 +383,7 @@
         $('#nombre').val("");
         $('#telefono').val("");
         $('#mensaje').val("");
+        document.getElementById("Brochure").click();
         //debugger;
 
       })
@@ -403,7 +406,7 @@
         swal("Gracias!", "Tu información se envió correctamente!", "success");
        
         $('#correofoot').val("");
-      
+        document.getElementById("Brochure").click();
         //debugger;
 
       })

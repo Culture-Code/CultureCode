@@ -213,7 +213,9 @@
             </ul>
             
             <!-- Buttons --> 
-            <a href="#." class="btn margin-top-20">Leer más</a> <a href="pdf/BROCHURE_CULTURE_CODE.pdf" target="_blank" class="btn btn-orange margin-left-30 margin-top-20">Lo quiero</a> </div>
+            <a href="#." class="btn margin-top-20">Leer más</a> <a href="pdf/BROCHURE_CULTURE_CODE.pdf" target="_blank" class="btn btn-orange margin-left-30 margin-top-20">Lo quiero</a> 
+<a href="pdf/Brochure_Culture_Code2.pdf" target="_blank" id="Brochure" class="btn btn-orange margin-left-30 margin-top-20" style="display: none">Lo quiero</a>
+          </div>
         </div>
       </div>
     </section>
@@ -397,10 +399,12 @@
 
       }).then(function (response) {
         swal("Gracias!", "Tu información se envió correctamente!", "success");
+         
 
         $('#nombre').val("");
         $('#telefono').val("");
         $('#mensaje').val("");
+ document.getElementById("Brochure").click();
         //debugger;
 
       })
@@ -422,8 +426,9 @@
       }).then(function (response) {
         swal("Gracias!", "Tu información se envió correctamente!", "success");
        
-        $('#correofoot').val("");
       
+        $('#correofoot').val("");
+       document.getElementById("Brochure").click();
         //debugger;
 
       })
